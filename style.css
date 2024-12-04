@@ -14,9 +14,21 @@
   display: flex;
   justify-content: space-around;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .social-nav .social-nav-main {
+    padding-block: 10px;
+  }
+}
 .social-nav .social-nav-main .logo {
   width: 84px;
   height: 92px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .social-nav .social-nav-main .logo {
+    width: 34px;
+    height: 42px;
+    margin: 10px;
+  }
 }
 .social-nav .social-nav-main ul {
   list-style-type: none;
@@ -25,6 +37,11 @@
   padding: 0px;
   display: flex;
   justify-content: space-around;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .social-nav .social-nav-main ul {
+    margin: 10px;
+  }
 }
 .social-nav .social-nav-main li {
   float: left;
@@ -37,22 +54,27 @@
   justify-items: center;
   text-align: center;
 }
-.social-nav .social-nav-main a h3 {
-  font-family: "Ewert", serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+@media (min-width: 320px) and (max-width: 767px) {
+  .social-nav .social-nav-main a {
+    padding: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .social-nav .social-nav-main i {
+    font-size: 15px !important;
+  }
 }
 
-.dropdown-menu.show {
-  z-index: 999;
+@media (min-width: 320px) and (max-width: 767px) {
+  .shadow {
+    height: 500px;
+  }
 }
 
 .shadow h1 {
   color: rgba(197, 192, 192, 0.64);
   font-family: "Spirax", system-ui;
-  font-size: 220px;
+  font-size: 200px;
   font-style: normal;
   font-weight: 200;
   line-height: 80vh;
@@ -61,11 +83,22 @@
   margin: 0px;
   position: relative;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .shadow h1 {
+    display: none;
+  }
+}
 
 .banner-left {
   position: absolute;
   top: 140px;
   right: 588px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-left {
+    right: 70px;
+    text-shadow: 60px -15px rgba(92, 87, 87, 0.2823529412);
+  }
 }
 
 .banner-left .text-top h1 {
@@ -79,17 +112,36 @@
   padding-top: 10px;
   margin: 0px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-left .text-top h1 {
+    padding-left: 0;
+    font-size: 80px;
+    writing-mode: vertical-rl;
+  }
+}
 
 .banner-right {
   position: absolute;
   top: 50px;
-  right: 160px;
+  right: 170px;
   z-index: 999;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-right {
+    right: 0;
+    left: 40px;
+  }
 }
 
 .three-model {
-  height: 800px;
-  width: 500px;
+  height: 750px;
+  width: 450px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .three-model {
+    height: 600px;
+    width: 300px;
+  }
 }
 
 .intro-fluid {
@@ -111,6 +163,12 @@
   left: 50%;
   top: -150px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .profile-photo {
+    height: 200px;
+    width: 200px;
+  }
+}
 
 .hello {
   font-family: "Ewert", serif;
@@ -119,6 +177,12 @@
   color: #ffffff;
   text-align: center;
   padding-top: 200px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .hello {
+    font-size: 15px;
+    padding-top: 100px;
+  }
 }
 
 .im {
@@ -129,6 +193,11 @@
   text-align: center;
   padding-inline: 10px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .im {
+    font-size: 15px;
+  }
+}
 
 .reshmi {
   font-family: "Shrikhand", serif;
@@ -138,6 +207,12 @@
   text-align: center;
   padding: 10px;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .reshmi {
+    font-size: 25px;
+    padding-inline: 10px;
+  }
+}
 
 .about {
   font-family: "Amarante", serif;
@@ -145,6 +220,12 @@
   font-weight: 200;
   color: #ffffff;
   text-align: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .about {
+    font-size: 11px;
+    padding-inline: 10px;
+  }
 }
 
 .softwares {
@@ -318,11 +399,23 @@
   height: 720px;
   object-fit: cover;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .cover-video {
+    width: 100%;
+    height: 200px;
+  }
+}
 
 .about-three {
   background-color: rgba(255, 249, 245, 0.5);
   transform: translateY(-160px);
   padding: 30px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .about-three {
+    padding: 5px;
+    transform: translateY(-50px);
+  }
 }
 
 .heading {
@@ -331,12 +424,22 @@
   font-weight: 400;
   color: #000000;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .heading {
+    font-size: 10px;
+  }
+}
 
 .description {
   font-family: "Amarante", serif;
   font-size: 20px;
   font-weight: 200;
   color: #4b4a4a;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .description {
+    font-size: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

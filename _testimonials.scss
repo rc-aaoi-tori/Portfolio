@@ -37,10 +37,18 @@ $dx8-desktop-width: 1200px;
   .social-nav-main {
     display: flex;
     justify-content: space-around;
+    @include mobile-only {
+      padding-block: 10px;
+    }
 
     .logo {
       width: 84px;
       height: 92px;
+      @include mobile-only {
+        width: 34px;
+        height: 42px;
+        margin: 10px;
+      }
     }
 
     ul {
@@ -52,6 +60,9 @@ $dx8-desktop-width: 1200px;
       display: flex;
       justify-content: space-around;
       // align-items: flex-end;
+      @include mobile-only {
+        margin: 10px;
+      }
     }
 
     li {
@@ -65,27 +76,28 @@ $dx8-desktop-width: 1200px;
       text-decoration: none;
       justify-items: center;
       text-align: center;
-
-      h3 {
-        font-family: "Ewert", serif;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+      @include mobile-only {
+        padding: 5px;
+      }
+     
+    }
+    i {
+      @include mobile-only {
+        font-size: 15px !important;
       }
     }
   }
 }
-.dropdown-menu.show {
-  z-index: 999;
-}
-
 // --------------banner-----------------------------------------
-
+.shadow{
+  @include mobile-only {
+    height: 500px;
+}
+}
 .shadow h1 {
   color: rgba(197, 192, 192, 0.64);
   font-family: variables.$spirax;
-  font-size: 220px;
+  font-size: 200px;
   font-style: normal;
   font-weight: 200;
   line-height: 80vh;
@@ -93,11 +105,22 @@ $dx8-desktop-width: 1200px;
   padding-top: 15px;
   margin: 0px;
   position: relative;
+  @include mobile-only {
+    display: none;
+    
+    
+}
 }
 .banner-left {
   position: absolute;
   top: 140px;
   right: 588px;
+  @include mobile-only {
+    
+    right: 70px;
+    text-shadow: 60px -15px #5c575748;
+  }
+  
 }
 .banner-left .text-top h1 {
   color: rgb(0, 0, 0);
@@ -109,16 +132,32 @@ $dx8-desktop-width: 1200px;
   padding-left: 350px;
   padding-top: 10px;
   margin: 0px;
+  @include mobile-only {
+   padding-left: 0;
+   font-size: 80px;
+   writing-mode: vertical-rl; 
+
+  }
 }
 .banner-right {
   position: absolute;
   top: 50px;
-  right: 160px;
+  right: 170px;
   z-index: 999;
+  @include mobile-only {
+    right: 0;
+    left: 40px; 
+ 
+   }
 }
 .three-model {
-  height: 800px;
-  width: 500px;
+  height: 750px;
+  width: 450px;
+  @include mobile-only {
+    height: 600px;
+    width: 300px; 
+ 
+   }
 }
 // -----------------------intro-----------------------
 .intro-fluid {
@@ -138,6 +177,10 @@ $dx8-desktop-width: 1200px;
   transform: translateX(-50%);
   left: 50%;
   top: -150px;
+  @include mobile-only {
+    height: 200px;
+    width: 200px;
+  }
 }
 .hello {
   font-family: variables.$ewert;
@@ -146,6 +189,10 @@ $dx8-desktop-width: 1200px;
   color: #ffffff;
   text-align: center;
   padding-top: 200px;
+  @include mobile-only {
+    font-size: 15px;
+    padding-top: 100px;
+  }
 }
 .im {
   font-family: variables.$amarante;
@@ -154,6 +201,9 @@ $dx8-desktop-width: 1200px;
   color: #ffffff;
   text-align: center;
   padding-inline: 10px;
+  @include mobile-only {
+    font-size: 15px;
+  }
 }
 .reshmi {
   font-family: variables.$shrikhand;
@@ -162,6 +212,10 @@ $dx8-desktop-width: 1200px;
   color: #ffffff;
   text-align: center;
   padding: 10px;
+  @include mobile-only {
+    font-size: 25px;
+    padding-inline: 10px;
+  }
 }
 
 .about {
@@ -170,6 +224,10 @@ $dx8-desktop-width: 1200px;
   font-weight: 200;
   color: #ffffff;
   text-align: center;
+  @include mobile-only {
+    font-size: 11px;
+    padding-inline: 10px;
+  }
 }
 
 .softwares {
@@ -329,21 +387,39 @@ $dx8-desktop-width: 1200px;
   width: 100%;
   height: 720px;
   object-fit: cover;
+  @include mobile-only {
+    width: 100%;
+    height: 200px;
+ 
+   }
 }
 .about-three {
   background-color: rgba($color: #fff9f5a4, $alpha: 0.5);
   transform: translateY(-160px);
   padding: 30px;
+  @include mobile-only {
+    padding: 5px;
+    transform: translateY(-50px);
+ 
+   }
 }
 .heading {
   font-family: variables.$shrikhand;
   font-size: 30px;
   font-weight: 400;
   color: #000000;
+  @include mobile-only {
+    font-size: 10px;
+ 
+   }
 }
 .description {
   font-family: variables.$amarante;
   font-size: 20px;
   font-weight: 200;
   color: #4b4a4a;
+  @include mobile-only {
+    font-size: 5px;
+ 
+   }
 }
