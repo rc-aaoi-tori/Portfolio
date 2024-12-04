@@ -442,4 +442,30 @@
   }
 }
 
+.telephone {
+  text-align: center;
+}
+.telephone h3 {
+  font-family: "Ewert", serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .telephone h3 {
+    font-size: 10px;
+  }
+}
+.telephone p {
+  font-family: "Amarante", serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: #4b4a4a;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .telephone p {
+    font-size: 5px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
