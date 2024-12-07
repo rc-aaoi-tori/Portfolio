@@ -16,7 +16,7 @@ $(function () {
         });
   
         $tabpaneToggler.on("click", function () {
-          $tabpanelMenus.slideToggle(1000);
+          $tabpanelMenus.stop().slideToggle(1000);
           $hamburgerWrapper.children(".hamburger-menu").toggleClass("animate");
         });
       }
