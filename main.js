@@ -12,11 +12,11 @@ $(function () {
           e.preventDefault();
           $(this).children(".hamburger-menu").toggleClass("animate");
   
-          $tabpanelMenus.stop().slideToggle(1000);
+          $tabpanelMenus.toggleClass('d-block');
         });
   
         $tabpaneToggler.on("click", function () {
-          $tabpanelMenus.stop().slideToggle(1000);
+          $tabpanelMenus.toggleClass('d-block');
           $hamburgerWrapper.children(".hamburger-menu").toggleClass("animate");
         });
       }
