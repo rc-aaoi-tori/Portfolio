@@ -101,7 +101,7 @@ $dx8-desktop-width: 1200px;
   font-style: normal;
   font-weight: 200;
   line-height: 80vh;
-  padding-left: 350px;
+  padding-left: 260px;
   padding-top: 15px;
   margin: 0px;
   position: relative;
@@ -308,7 +308,7 @@ $dx8-desktop-width: 1200px;
     display: flex;
     justify-content: space-around;
     @include mobile-only(){
-      padding-inline: 130px;
+      padding-inline: 150px;
     }
     .logo {
       width: 100px;
@@ -347,7 +347,7 @@ $dx8-desktop-width: 1200px;
         right: 0;
         top: 100%;
         margin: 0;
-        background-color: #fffbf2;
+        background-color:  rgba($color: #fffbf2, $alpha: 0.8);;
       }
     }
 

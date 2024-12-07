@@ -78,7 +78,7 @@
   font-style: normal;
   font-weight: 200;
   line-height: 80vh;
-  padding-left: 350px;
+  padding-left: 260px;
   padding-top: 15px;
   margin: 0px;
   position: relative;
@@ -251,7 +251,7 @@
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .tab-nav-fluid .tab-nav-main {
-    padding-inline: 130px;
+    padding-inline: 150px;
   }
 }
 .tab-nav-fluid .tab-nav-main .logo {
@@ -293,7 +293,7 @@
     right: 0;
     top: 100%;
     margin: 0;
-    background-color: #fffbf2;
+    background-color: rgba(255, 251, 242, 0.8);
   }
 }
 .tab-nav-fluid .tab-nav-main a {
