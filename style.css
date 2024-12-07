@@ -241,66 +241,6 @@
 }
 
 /* Hamburger starts */
-.hamburger-menu,
-.hamburger-menu:after,
-.hamburger-menu:before {
-  width: 24px;
-  height: 4px;
-  border-radius: 2px;
-}
-
-.hamburger-wrapper {
-  display: block;
-  padding: 12px 0;
-  z-index: 1338;
-  display: none !important;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .hamburger-wrapper {
-    display: block !important;
-  }
-}
-
-.hamburger-menu {
-  position: relative;
-  background: black;
-  transition: all 0ms 200ms;
-  display: block;
-}
-.hamburger-menu.animate {
-  background: white;
-}
-
-.hamburger-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  background: black;
-  transition: bottom 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hamburger-menu:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 8px;
-  background: black;
-  transition: top 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hamburger-menu.animate:after {
-  top: 0;
-  transform: rotate(45deg);
-  transition: top 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.hamburger-menu.animate:before {
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 200ms cubic-bezier(0.23, 1, 0.32, 1), transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
 /* Hamburger ends */
 .tab-nav-fluid {
   background-color: rgba(255, 251, 242, 0.8);
@@ -310,8 +250,17 @@
   justify-content: space-around;
 }
 .tab-nav-fluid .tab-nav-main .logo {
-  width: 84px;
-  height: 92px;
+  width: 54px;
+  height: 62px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .tab-nav-fluid .tab-nav-main .logo {
+    align-items: center;
+  }
+}
+.tab-nav-fluid .tab-nav-main .logo a {
+  display: block;
+  margin: 0 auto;
 }
 .tab-nav-fluid .tab-nav-main ul {
   list-style-type: none;
@@ -330,8 +279,9 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .tab-nav-fluid .tab-nav-main ul {
     justify-content: center;
-    flex-direction: column;
-    display: none;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
     position: absolute;
     left: 0;
     right: 0;
@@ -354,6 +304,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .tab-nav-fluid .tab-nav-main a h3 {
+    font-size: 12px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .tab-nav-fluid .tab-nav-main a {
