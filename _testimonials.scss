@@ -307,11 +307,16 @@ $dx8-desktop-width: 1200px;
   .tab-nav-main {
     display: flex;
     justify-content: space-around;
+    @include mobile-only(){
+      padding-inline: 130px;
+    }
     .logo {
-      width: 54px;
-      height: 62px;
+      width: 100px;
+      height: 100px;
       @include mobile-only{
-        align-items: center;
+        // align-items: center;
+        width: 70px;
+        height: 70px;
         
       }
       a{

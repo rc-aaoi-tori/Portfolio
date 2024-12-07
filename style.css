@@ -249,13 +249,19 @@
   display: flex;
   justify-content: space-around;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .tab-nav-fluid .tab-nav-main {
+    padding-inline: 130px;
+  }
+}
 .tab-nav-fluid .tab-nav-main .logo {
-  width: 54px;
-  height: 62px;
+  width: 100px;
+  height: 100px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .tab-nav-fluid .tab-nav-main .logo {
-    align-items: center;
+    width: 70px;
+    height: 70px;
   }
 }
 .tab-nav-fluid .tab-nav-main .logo a {
