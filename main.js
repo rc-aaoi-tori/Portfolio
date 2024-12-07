@@ -12,7 +12,7 @@ $(function () {
           e.preventDefault();
           $(this).children(".hamburger-menu").toggleClass("animate");
   
-          $tabpanelMenus.slideToggle(1000);
+          $tabpanelMenus.stop().slideToggle(1000);
         });
   
         $tabpaneToggler.on("click", function () {
