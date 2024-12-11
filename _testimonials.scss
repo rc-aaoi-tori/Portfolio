@@ -465,3 +465,20 @@ $dx8-desktop-width: 1200px;
    }
  }
 }
+// -----branding
+// ---logo--
+
+.logodisplay{
+  text-align: center;
+ h3{
+  font-family: variables.$ewert;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  @include mobile-only {
+    font-size: 10px;
+ 
+   }
+ }
+ 
+}

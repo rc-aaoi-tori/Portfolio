@@ -25,3 +25,7 @@
 //     hamBurgerMenu();
 //     window.addEventListener('resize', hamBurgerMenu);
 //   });
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
