@@ -367,8 +367,54 @@
   }
 }
 
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px 20px;
+}
+.item:hover {
+  flex: 7;
+}
+
+.item-1 {
+  background-image: url();
+}
+
+.item-2 {
+  background-image: url();
+}
+
+.item-3 {
+  background-image: url();
+}
+
+.item-4 {
+  background-image: url();
+}
+
+.item-5 {
+  background-image: url();
+}
+
 .telephone, .logodisplay {
   text-align: center;
+  margin-top: 40px;
 }
 .telephone h3, .logodisplay h3 {
   font-family: "Ewert", serif;
