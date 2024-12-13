@@ -409,7 +409,7 @@ $dx8-desktop-width: 1200px;
   @include mobile-only {
     width: 100%;
     height: 200px;
- 
+    margin-top: 60px;
    }
 }
 
@@ -417,6 +417,9 @@ $dx8-desktop-width: 1200px;
 
 
 // -----branding
+.logodisplay{
+  margin-top: 50PX;
+}
 // ---logo--
 // accordion gallery
 .gallery-wrap {
@@ -467,6 +470,10 @@ $dx8-desktop-width: 1200px;
 }
 
 // ---accordion gallery ends
+// ----ADVERTISEMENT
+.adwrapper{
+  margin-top: 50px;
+}
 // ---HEADINGS
 .telephone, .logodisplay{
   text-align: center;

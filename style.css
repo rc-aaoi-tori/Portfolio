@@ -364,7 +364,12 @@
   .cover-video {
     width: 100%;
     height: 200px;
+    margin-top: 60px;
   }
+}
+
+.logodisplay {
+  margin-top: 50PX;
 }
 
 .gallery-wrap {
@@ -410,6 +415,10 @@
 
 .item-5 {
   background-image: url();
+}
+
+.adwrapper {
+  margin-top: 50px;
 }
 
 .telephone, .logodisplay {
