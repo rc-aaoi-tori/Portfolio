@@ -367,80 +367,29 @@
   }
 }
 
-.about-three {
-  background-color: rgba(255, 249, 245, 0.5);
-  transform: translateY(-160px);
-  padding: 30px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .about-three {
-    padding: 5px;
-    transform: translateY(-50px);
-  }
-}
-
-.heading {
-  font-family: "Shrikhand", serif;
-  font-size: 30px;
-  font-weight: 400;
-  color: #000000;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .heading {
-    font-size: 10px;
-  }
-}
-
-.description {
-  font-family: "Amarante", serif;
-  font-size: 20px;
-  font-weight: 200;
-  color: #4b4a4a;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .description {
-    font-size: 5px;
-  }
-}
-
-.telephone {
+.telephone, .logodisplay {
   text-align: center;
 }
-.telephone h3 {
+.telephone h3, .logodisplay h3 {
   font-family: "Ewert", serif;
   font-size: 30px;
   font-weight: 400;
   color: #000000;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .telephone h3 {
+  .telephone h3, .logodisplay h3 {
     font-size: 10px;
   }
 }
-.telephone p {
+.telephone p, .logodisplay p {
   font-family: "Amarante", serif;
   font-size: 15px;
   font-weight: 200;
   color: #4b4a4a;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .telephone p {
+  .telephone p, .logodisplay p {
     font-size: 5px;
-  }
-}
-
-.logodisplay {
-  text-align: center;
-}
-.logodisplay h3 {
-  font-family: "Ewert", serif;
-  font-size: 30px;
-  font-weight: 400;
-  color: #000000;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .logodisplay h3 {
-    font-size: 10px;
   }
 }
 

@@ -412,37 +412,17 @@ $dx8-desktop-width: 1200px;
  
    }
 }
-.about-three {
-  background-color: rgba($color: #fff9f5a4, $alpha: 0.5);
-  transform: translateY(-160px);
-  padding: 30px;
-  @include mobile-only {
-    padding: 5px;
-    transform: translateY(-50px);
- 
-   }
-}
-.heading {
-  font-family: variables.$shrikhand;
-  font-size: 30px;
-  font-weight: 400;
-  color: #000000;
-  @include mobile-only {
-    font-size: 10px;
- 
-   }
-}
-.description {
-  font-family: variables.$amarante;
-  font-size: 20px;
-  font-weight: 200;
-  color: #4b4a4a;
-  @include mobile-only {
-    font-size: 5px;
- 
-   }
-}
-.telephone{
+
+
+
+
+// -----branding
+// ---logo--
+
+
+
+// ---HEADINGS
+.telephone, .logodisplay{
   text-align: center;
  h3{
   font-family: variables.$ewert;
@@ -464,21 +444,4 @@ $dx8-desktop-width: 1200px;
  
    }
  }
-}
-// -----branding
-// ---logo--
-
-.logodisplay{
-  text-align: center;
- h3{
-  font-family: variables.$ewert;
-  font-size: 30px;
-  font-weight: 400;
-  color: #000000;
-  @include mobile-only {
-    font-size: 10px;
- 
-   }
- }
- 
 }
