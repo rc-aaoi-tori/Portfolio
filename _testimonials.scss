@@ -520,6 +520,12 @@ $dx8-desktop-width: 1200px;
 .adtopcol{
   width: 1200px;
 } 
+// lightbox
+.hovereffect:hover {
+  transform: scale(1.5);
+  transition: transform .2s;
+}
+// ------
 
 
 // ----------

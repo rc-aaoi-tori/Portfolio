@@ -452,6 +452,11 @@
   width: 1200px;
 }
 
+.hovereffect:hover {
+  transform: scale(1.5);
+  transition: transform 0.2s;
+}
+
 .telephone, .logodisplay {
   text-align: center;
   margin-top: 40px;
