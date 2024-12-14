@@ -428,6 +428,28 @@
 
 .adwrapper {
   margin-top: 50px;
+  width: 1200px;
+  padding-left: 70px;
+}
+.adwrapper .adcol {
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.adwrapper .adcol .adrowrow {
+  height: 250px;
+  width: 400px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.adrow {
+  width: 1200px;
+}
+
+.adtopcol {
+  width: 1200px;
 }
 
 .telephone, .logodisplay {

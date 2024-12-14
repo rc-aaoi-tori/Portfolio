@@ -33,6 +33,7 @@ $dx8-desktop-width: 1200px;
   background: #fffbf2;
   width: 100%;
 }
+
 .social-nav {
   .social-nav-main {
     display: flex;
@@ -490,9 +491,38 @@ $dx8-desktop-width: 1200px;
   border: 1px solid black;
 }
 // ----ADVERTISEMENT
+// --grid gallery
+
+   
+
 .adwrapper{
   margin-top: 50px;
+  width: 1200px;
+  padding-left: 70px;
+  
+  .adcol{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+      overflow: hidden;
+    .adrowrow{
+      height: 250px;
+      width: 400px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+ 
 }
+.adrow{
+  width: 1200px;
+}
+.adtopcol{
+  width: 1200px;
+} 
+
+
+// ----------
 // ---HEADINGS
 .telephone, .logodisplay{
   text-align: center;
