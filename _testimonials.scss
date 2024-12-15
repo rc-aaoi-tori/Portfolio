@@ -621,14 +621,14 @@ button {
 // ------quote------
 .quote{
   text-align: center;
-  margin: 150px;
+  margin-block: 150px;
   h2{
   font-family: variables.$amarante;
   font-size: 25px;
   font-weight: 200;
-  color: #4b4a4a;
+  color: #313131;
   @include mobile-only {
-    font-size: 5px;
+    font-size: 10px;
  
    }
 }
@@ -639,7 +639,12 @@ button {
   .footercolor{
     background-color: #001717;
     border-radius: 40px 40px 0px 0px;
-    padding: 100px;
+    padding-block: 100px;
+    .logowhite{
+      width: 84px;
+      height: 92px;
+      
+    }
   }
 }
 .copyright {

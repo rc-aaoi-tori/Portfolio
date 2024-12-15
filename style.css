@@ -617,24 +617,28 @@
 
 .quote {
   text-align: center;
-  margin: 150px;
+  margin-block: 150px;
 }
 .quote h2 {
   font-family: "Amarante", serif;
   font-size: 25px;
   font-weight: 200;
-  color: #4b4a4a;
+  color: #313131;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .quote h2 {
-    font-size: 5px;
+    font-size: 10px;
   }
 }
 
 .footer-main .footercolor {
   background-color: #001717;
   border-radius: 40px 40px 0px 0px;
-  padding: 100px;
+  padding-block: 100px;
+}
+.footer-main .footercolor .logowhite {
+  width: 84px;
+  height: 92px;
 }
 
 .copyright {
