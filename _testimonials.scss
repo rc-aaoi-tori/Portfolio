@@ -423,63 +423,35 @@ $dx8-desktop-width: 1200px;
 }
 // ---logo--
 // accordion gallery
-.gallery-wrap {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 70vh;
+.gridwrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  height: 50vh;
   @include mobile-only {
-    
-    
-    
-   }
-  
-}
-
-.item {
-  flex: 1;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  transition: flex 0.8s ease;
-  @include mobile-only {
-    
-    
-    
-  }
-  img{
-    height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 50px 20px;
-  }
-  
-  &:hover{
-    flex: 7;
-  }
+    height: auto;
+    display: block;
+
+   }
 }
 
-.item-1 { 
-  background-image: url();
+.gridwrapper img {
+  width: 300px;
+  height: 200px;
+  border: 2px solid #161615;
+  padding: 10px;
+  border-radius: 40px 0px 40px 0px;
+  object-fit: cover;
+  cursor: pointer;
+  @include mobile-only {
+    width: 100%;
+    height: auto;
+    display: block;
+   }
 }
-
-.item-2 { 
-  background-image: url();
-}
-
-.item-3 { 
-  background-image: url();
-}
-
-.item-4 { 
-  background-image: url();
-}
-
-.item-5 { 
-  background-image: url();
-}
-
 // ---accordion gallery ends
 .carousel-control-prev-icon, .carousel-control-next-icon {
   height: 100px;
@@ -492,7 +464,7 @@ $dx8-desktop-width: 1200px;
 }
 // ----ADVERTISEMENT
 // --grid gallery
-  /* ---masonry---- */
+  // ---masonry----
   .masonry-grid{
     align-items: center;
     justify-items: center;
@@ -559,7 +531,7 @@ $dx8-desktop-width: 1200px;
     align-items: center;
     object-fit: cover;
 }
-
+// ---masonry ends---
 
 // ------lightbox
 #lightbox {
@@ -568,7 +540,8 @@ $dx8-desktop-width: 1200px;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .8);
+  background-color:  rgba(255, 255, 255, 0.23);
+  backdrop-filter: blur(3px);
   display: none;
 }
 
