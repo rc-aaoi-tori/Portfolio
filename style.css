@@ -240,8 +240,24 @@
   padding-bottom: 20px;
 }
 
-/* Hamburger starts */
-/* Hamburger ends */
+.pdf-download {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.pdf-download button {
+  margin: 20px;
+  background-color: #fffefb;
+  color: #000000;
+  font-family: "Amarante", serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: #4b4a4a;
+  padding: 10px;
+  border-radius: 20px;
+}
+
 .tab-nav-fluid {
   background-color: rgba(255, 251, 242, 0.8);
 }
@@ -514,29 +530,29 @@
   border: 2px solid white;
 }
 
-.telephone, .logodisplay, .advertisement {
+.pdf-portfolio, .telephone, .logodisplay, .advertisement {
   text-align: center;
   margin-top: 40px;
 }
-.telephone h3, .logodisplay h3, .advertisement h3 {
+.pdf-portfolio h3, .telephone h3, .logodisplay h3, .advertisement h3 {
   font-family: "Ewert", serif;
   font-size: 30px;
   font-weight: 400;
   color: #000000;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .telephone h3, .logodisplay h3, .advertisement h3 {
+  .pdf-portfolio h3, .telephone h3, .logodisplay h3, .advertisement h3 {
     font-size: 10px;
   }
 }
-.telephone p, .logodisplay p, .advertisement p {
+.pdf-portfolio p, .telephone p, .logodisplay p, .advertisement p {
   font-family: "Amarante", serif;
   font-size: 15px;
   font-weight: 200;
   color: #4b4a4a;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .telephone p, .logodisplay p, .advertisement p {
+  .pdf-portfolio p, .telephone p, .logodisplay p, .advertisement p {
     font-size: 5px;
   }
 }
