@@ -442,6 +442,10 @@
   }
 }
 
+.tree-projects {
+  cursor: pointer;
+}
+
 .logodisplay {
   margin-top: 70PX;
 }
