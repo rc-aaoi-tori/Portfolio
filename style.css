@@ -242,9 +242,9 @@
 
 .pdf-download {
   width: 90%;
-  margin: 40px auto;
   text-align: center;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
+  margin: auto;
 }
 .pdf-download button {
   margin: 20px;
