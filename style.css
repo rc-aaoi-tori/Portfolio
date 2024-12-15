@@ -615,4 +615,38 @@
   }
 }
 
+.quote {
+  text-align: center;
+  margin: 150px;
+}
+.quote h2 {
+  font-family: "Amarante", serif;
+  font-size: 25px;
+  font-weight: 200;
+  color: #4b4a4a;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .quote h2 {
+    font-size: 5px;
+  }
+}
+
+.footer-main .footercolor {
+  background-color: #001717;
+  border-radius: 40px 40px 0px 0px;
+  padding: 100px;
+}
+
+.copyright {
+  text-align: center;
+}
+.copyright .createdby p {
+  color: #FFF;
+  font-family: Amarante;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /*# sourceMappingURL=style.css.map */

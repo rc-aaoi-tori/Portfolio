@@ -618,3 +618,38 @@ button {
    }
  }
 }
+// ------quote------
+.quote{
+  text-align: center;
+  margin: 150px;
+  h2{
+  font-family: variables.$amarante;
+  font-size: 25px;
+  font-weight: 200;
+  color: #4b4a4a;
+  @include mobile-only {
+    font-size: 5px;
+ 
+   }
+}
+}
+// ---------footer----
+.footer-main{
+  
+  .footercolor{
+    background-color: #001717;
+    border-radius: 40px 40px 0px 0px;
+    padding: 100px;
+  }
+}
+.copyright {
+  text-align: center;
+  .createdby p{
+    color: #FFF;
+    font-family: Amarante;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+}
