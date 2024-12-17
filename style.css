@@ -315,6 +315,10 @@
   padding: 10px;
   border-radius: 20px;
 }
+.pdf-download a {
+  text-decoration: none;
+  color: white;
+}
 
 .tab-nav-fluid {
   background-color: rgba(255, 251, 242, 0.8);
@@ -542,6 +546,7 @@
   height: 25vh;
   width: 300px;
   object-fit: cover;
+  overflow: hidden;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .hitem {
@@ -554,6 +559,7 @@
   height: 50vh;
   width: 300px;
   object-fit: cover;
+  overflow: hidden;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .litem {
