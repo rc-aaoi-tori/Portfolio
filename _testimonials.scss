@@ -94,6 +94,9 @@ $dx8-desktop-width: 1200px;
   @include mobile-only {
     height: 500px;
 }
+@include tablet-only {
+  
+}
 }
 .shadow h1 {
   color: rgba(197, 192, 192, 0.64);
@@ -111,6 +114,13 @@ $dx8-desktop-width: 1200px;
     
     
 }
+@include tablet-only {
+  padding-left: 0px;
+  font-size: 150px;
+  text-align: center;
+  
+  
+}
 }
 .banner-left {
   position: absolute;
@@ -118,8 +128,13 @@ $dx8-desktop-width: 1200px;
   right: 588px;
   @include mobile-only {
     
-    right: 70px;
+    right: 50px;
     text-shadow: 60px -15px #5c575748;
+  }
+  @include tablet-only {
+    top: 130px;
+    right: 130px;
+    
   }
   
 }
@@ -139,24 +154,43 @@ $dx8-desktop-width: 1200px;
    writing-mode: vertical-rl; 
 
   }
-}
-.banner-right {
-  position: absolute;
-  top: 50px;
-  right: 170px;
-  z-index: 999;
-  @include mobile-only {
-    right: 0;
-    left: 40px; 
+  @include tablet-only {
+    padding-left: 0;
+    font-size: 80px;
+    font-size: 150px;
  
    }
 }
-.three-model {
-  height: 750px;
-  width: 450px;
+.banner-right {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  z-index: 999;
   @include mobile-only {
-    height: 600px;
-    width: 300px; 
+    right: 0;
+    left: 80px;
+    top: 200px; 
+ 
+   }
+   @include tablet-only {
+    right: 0;
+    left: 0px;
+    top: 200px; 
+ 
+   }
+}
+.knight {
+  height: 1100px;
+  width: 800px;
+  @include mobile-only {
+    height: 800px;
+    width: 800px; 
+ 
+   }
+   @include tablet-only {
+    right: 0;
+    left: 0px;
+    top: 200px; 
  
    }
 }
@@ -502,78 +536,34 @@ a {
 // ----ADVERTISEMENT
 // --grid gallery
   // ---masonry----
-  .masonry-grid{
-    align-items: center;
-    justify-items: center;
-}
-.grid-container{
-     width: 900px;
-     height: 100vh;
-     justify-content: center;
-     align-content: center;
-     cursor: pointer;
-     @include mobile-only {
-      width: 100%;
-      height: auto;
-      
-      }
-} 
-.firstrow, .secondrow{
-    display: flex;
-    @include mobile-only {
-    flex-direction: column;
+  
+  .litem {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
     
-    
+    :hover{
+      transition: all .5s;
+      transform: scale(1.2);
     }
-}
-.hitem, .litem{
-    justify-items: center;
-    object-fit: cover;
-}
-.hitem img{
-    height: 100%;
+  }
+  .hitem {
+    height: 300px;
     width: 100%;
-    object-fit: cover;
-    
-}
-.litem img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    
-    
-}
-.hitem {
-    height: 25vh;
-    width: 300px;
-    object-fit: cover;
     overflow: hidden;
-    @include mobile-only {
-      width: 100%;
-      height: auto;
-      
-      }
     
-}
-.litem {
-    height: 50vh;
-    width: 300px;
-    object-fit: cover;
-    overflow: hidden;
-    @include mobile-only {
-      width: 100%;
-      height: auto;
-      
-      }
-}
-
-
-.column{
-    align-items: center;
-    object-fit: cover;
-}
+    :hover{
+      transition: all .5s;
+      transform: scale(1.2);
+    }
+  }
 // ---masonry ends---
 
+
+// ----------------
+.grid-container{
+  cursor: pointer;
+}
 // ------lightbox
 #lightbox {
   position: fixed;
@@ -601,6 +591,15 @@ a {
 }
 
 // ----------
+// -----hover on photos---
+.photohover {
+  overflow: hidden;
+  :hover{
+    transition: all .5s;
+    transform: scale(1.2);
+}
+}
+// ------------
 // ---HEADINGS
 .pdf-portfolio, .telephone, .logodisplay, .advertisement{
   text-align: center;
