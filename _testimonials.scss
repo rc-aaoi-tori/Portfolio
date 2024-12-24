@@ -170,30 +170,37 @@ $dx8-desktop-width: 1200px;
     right: 0;
     left: 80px;
     top: 200px; 
+    overflow: hidden;
  
    }
    @include tablet-only {
     right: 0;
     left: 0px;
     top: 200px; 
+    overflow: hidden;
  
    }
 }
 .knight {
-  height: 1100px;
-  width: 800px;
+  width:800px;
+  height: auto;
+  
   @include mobile-only {
-    height: 800px;
-    width: 800px; 
+    width: 490px;
+    height: auto;
+     
  
    }
    @include tablet-only {
     right: 0;
     left: 0px;
     top: 200px; 
+    width: 780px;
+    height: auto;
  
    }
 }
+
 // -----------------------intro-----------------------
 .intro-fluid {
   background-color: #161615;
