@@ -167,8 +167,8 @@ $dx8-desktop-width: 1200px;
   right: 100px;
   z-index: 999;
   @include mobile-only {
-    right: 0;
-    left: 80px;
+    right: 0px;
+    left: 10px;
     top: 200px; 
     overflow: hidden;
  

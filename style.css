@@ -147,8 +147,8 @@
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner-right {
-    right: 0;
-    left: 80px;
+    right: 0px;
+    left: 10px;
     top: 200px;
     overflow: hidden;
   }
