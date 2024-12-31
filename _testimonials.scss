@@ -494,7 +494,19 @@ a {
 .tree-projects{
   cursor: pointer;
 }
-
+// --------------2d---------------------------
+.digi-art-main{
+  overflow: hidden;
+.digi-art{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 60%;
+  object-fit: cover;
+}
+}
+// ------------------------------------
 // -----branding
 .logodisplay{
   margin-top: 70PX;
@@ -531,6 +543,66 @@ a {
    }
 }
 // ---accordion gallery ends
+// --------brochure------
+.brochure{
+  .flip-card {
+    background-color: transparent;
+    width: 1000px;
+    height: 500px;
+    perspective: 1000px;
+    margin: auto;
+    margin-top: 140px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+  
+  .flip-card:focus {
+      outline: 0;
+  }
+  
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(to left, #4364f7, #6fb1fc);
+    color: black;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(to right, #4364f7, #6fb1fc);
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+// ----------------
+// -----carouse button----
 .carousel-control-prev-icon, .carousel-control-next-icon {
   height: 100px;
   width: 100px;
@@ -540,6 +612,7 @@ a {
   border-radius: 20%;
   border: 1px solid black;
 }
+// --------------------
 // ----ADVERTISEMENT
 // --grid gallery
   // ---masonry----
@@ -565,7 +638,29 @@ a {
     }
   }
 // ---masonry ends---
-
+.poster{
+  cursor: pointer;
+}
+// -------ux/ui----------
+.webcard{
+  margin: auto;
+  height: auto;
+  width: 800px;
+  text-align: center;
+  h5{
+    font-family: variables.$ewert;
+  }
+  p{
+    font-family: variables.$amarante;
+  }
+  a{
+    font-family: variables.$amarante;
+  }
+  img{
+    height: 400px;
+  };
+}
+// -----ux/ui ends------
 
 // ----------------
 .grid-container{
@@ -608,7 +703,7 @@ a {
 }
 // ------------
 // ---HEADINGS
-.pdf-portfolio, .telephone, .logodisplay, .advertisement{
+.pdf-portfolio, .telephone, .logodisplay, .advertisement, .Poster-heading, .maga-heading, .digiart-heading{
   text-align: center;
   margin-top: 40px;
  h3{

@@ -488,6 +488,18 @@
   cursor: pointer;
 }
 
+.digi-art-main {
+  overflow: hidden;
+}
+.digi-art-main .digi-art {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 60%;
+  object-fit: cover;
+}
+
 .logodisplay {
   margin-top: 70PX;
 }
@@ -525,6 +537,56 @@
   }
 }
 
+.brochure .flip-card {
+  background-color: transparent;
+  width: 1000px;
+  height: 500px;
+  perspective: 1000px;
+  margin: auto;
+  margin-top: 140px;
+}
+.brochure .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.brochure .flip-card:focus {
+  outline: 0;
+}
+.brochure .flip-card:hover .flip-card-inner,
+.brochure .flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.brochure .flip-card-front,
+.brochure .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.brochure .flip-card-front {
+  background: linear-gradient(to left, #4364f7, #6fb1fc);
+  color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brochure .flip-card-back {
+  background: linear-gradient(to right, #4364f7, #6fb1fc);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .carousel-control-prev-icon, .carousel-control-next-icon {
   height: 100px;
   width: 100px;
@@ -553,6 +615,29 @@
 .hitem :hover {
   transition: all 0.5s;
   transform: scale(1.2);
+}
+
+.poster {
+  cursor: pointer;
+}
+
+.webcard {
+  margin: auto;
+  height: auto;
+  width: 800px;
+  text-align: center;
+}
+.webcard h5 {
+  font-family: "Ewert", serif;
+}
+.webcard p {
+  font-family: "Amarante", serif;
+}
+.webcard a {
+  font-family: "Amarante", serif;
+}
+.webcard img {
+  height: 400px;
 }
 
 .grid-container {
@@ -592,29 +677,29 @@
   transform: scale(1.2);
 }
 
-.pdf-portfolio, .telephone, .logodisplay, .advertisement {
+.pdf-portfolio, .telephone, .logodisplay, .advertisement, .Poster-heading, .maga-heading, .digiart-heading {
   text-align: center;
   margin-top: 40px;
 }
-.pdf-portfolio h3, .telephone h3, .logodisplay h3, .advertisement h3 {
+.pdf-portfolio h3, .telephone h3, .logodisplay h3, .advertisement h3, .Poster-heading h3, .maga-heading h3, .digiart-heading h3 {
   font-family: "Ewert", serif;
   font-size: 30px;
   font-weight: 400;
   color: #000000;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .pdf-portfolio h3, .telephone h3, .logodisplay h3, .advertisement h3 {
+  .pdf-portfolio h3, .telephone h3, .logodisplay h3, .advertisement h3, .Poster-heading h3, .maga-heading h3, .digiart-heading h3 {
     font-size: 10px;
   }
 }
-.pdf-portfolio p, .telephone p, .logodisplay p, .advertisement p {
+.pdf-portfolio p, .telephone p, .logodisplay p, .advertisement p, .Poster-heading p, .maga-heading p, .digiart-heading p {
   font-family: "Amarante", serif;
   font-size: 15px;
   font-weight: 200;
   color: #4b4a4a;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .pdf-portfolio p, .telephone p, .logodisplay p, .advertisement p {
+  .pdf-portfolio p, .telephone p, .logodisplay p, .advertisement p, .Poster-heading p, .maga-heading p, .digiart-heading p {
     font-size: 5px;
   }
 }
