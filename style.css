@@ -573,9 +573,8 @@
 
 .webcard {
   margin: auto;
-  height: auto;
-  width: 800px;
   text-align: center;
+  width: 800px;
 }
 .webcard h5 {
   font-family: "Ewert", serif;
@@ -587,7 +586,8 @@
   font-family: "Amarante", serif;
 }
 .webcard img {
-  height: 400px;
+  height: auto;
+  width: 800px;
 }
 
 .grid-container {

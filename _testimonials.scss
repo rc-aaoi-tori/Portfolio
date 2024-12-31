@@ -588,9 +588,8 @@ a {
 // -------ux/ui----------
 .webcard{
   margin: auto;
-  height: auto;
-  width: 800px;
   text-align: center;
+  width: 800px;
   h5{
     font-family: variables.$ewert;
   }
@@ -601,7 +600,8 @@ a {
     font-family: variables.$amarante;
   }
   img{
-    height: 400px;
+    height: auto;
+    width: 800px;
   };
 }
 // -----ux/ui ends------
