@@ -589,7 +589,7 @@ a {
 .webcard{
   margin: auto;
   text-align: center;
-  width: 800px;
+
   h5{
     font-family: variables.$ewert;
   }
@@ -599,10 +599,18 @@ a {
   a{
     font-family: variables.$amarante;
   }
-  img{
-    height: auto;
-    width: 800px;
-  };
+  .aos{
+    height: 60vh;
+    overflow: hidden;
+    @include mobile-only {
+      height: 30vh;
+  
+     }
+     @include tablet-only {
+      height: auto;
+  
+     }
+  }
 }
 // -----ux/ui ends------
 
