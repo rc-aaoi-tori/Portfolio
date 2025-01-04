@@ -487,7 +487,6 @@ a {
   object-fit: cover;
   @include mobile-only {
     width: 100%;
-    height: 200px;
     margin-top: 60px;
    }
 }
